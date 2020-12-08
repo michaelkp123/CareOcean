@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    overflow-y: hidden;
+  }
+  ul {
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #5362BF;
+      height: 50px;
+  }
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    .message {
+      flex-grow: 2;
+  }
+  
+  .fa-facebook-square:before {
+    font-size: 30px;
+  }
+  
+  .fa-twitter-square:before{
+    font-size: 30px;
+  }
+  
+  .fa-instagram-square:before{
+    font-size: 30px;
+  }
+  .navbar {
+  display: flex;
+  list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+    background-color: #f3f3f3;
+    height: 50px;
+  
+  }
+  li a {
+    display: block;
+    color: #1d1d1b;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .logo {
+    flex-grow: 1;
+    width: 155px;
+    height: 50px;
+    margin-top: 4px;
+  }
+  .Menu1 {
+    flex-grow: 4;
+  }
+  .Menu2 {
+    flex-grow: 4;
+  }
+  .Menu3 {
+    flex-grow: 4;
+  }
+  
+  .main {
+    height: 100vh;
+    background-image: url(../Img/mlarge-plastique-ocean.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .layer{
+        display: flex;
+        flex-direction: column;
+        margin: none;
+        align-items: center;
+        background-color: #5362BF;
+        opacity: 72%;
+        position: 100wh;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+  }
+  
+  .text1 {
+    flex-grow: 1;
+  }
+  
+  .text2 {
+    flex-grow: 1;
+  }
+  
+  .knap {
+    flex-grow: 1;
+  }
