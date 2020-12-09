@@ -15,29 +15,21 @@ ul {
   height: 50px;
 }
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.message {
+ul .message {
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
 }
 
-.fa-facebook-square:before {
+ul .fa-facebook-square:before {
   font-size: 30px;
 }
 
-.fa-twitter-square:before {
+ul .fa-twitter-square:before {
   font-size: 30px;
 }
 
-.fa-instagram-square:before {
+ul .fa-instagram-square:before {
   font-size: 30px;
 }
 
@@ -53,15 +45,7 @@ li a {
   height: 50px;
 }
 
-li a {
-  display: block;
-  color: #1d1d1b;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.logo {
+.navbar .logo {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -70,22 +54,30 @@ li a {
   margin-top: 4px;
 }
 
-.Menu1 {
+.navbar .Menu1 {
   -webkit-box-flex: 4;
       -ms-flex-positive: 4;
           flex-grow: 4;
 }
 
-.Menu2 {
+.navbar .Menu2 {
   -webkit-box-flex: 4;
       -ms-flex-positive: 4;
           flex-grow: 4;
 }
 
-.Menu3 {
+.navbar .Menu3 {
   -webkit-box-flex: 4;
       -ms-flex-positive: 4;
           flex-grow: 4;
+}
+
+li a {
+  display: block;
+  color: #1d1d1b;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 .main {
@@ -116,19 +108,19 @@ li a {
   height: 100%;
 }
 
-.text1 {
+.main .text1 {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
 
-.text2 {
+.main .text2 {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
 
-.knap {
+.main .knap {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
