@@ -1,7 +1,9 @@
-$primary-color: #5362BF;
+$primary-color: #2375A4;
+$text-color1: #f3f3f3;
+$text-color2: #1D1D1B;
 body {
     margin: 0;
-    overflow-y: hidden;
+   // overflow-y: hidden;
   }
   ul {
       display: flex;
@@ -11,9 +13,12 @@ body {
       overflow: hidden;
       background-color: $primary-color;
       height: 50px;
+      justify-content: center;
+      align-items: center;
 
       .message {
         flex-grow: 2;
+        color: $text-color1;
     }
 
       .fa-facebook-square:before {
@@ -35,7 +40,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden; 
-    background-color: #f3f3f3;
+    background-color:$text-color1;
     height: 50px;
     
     .logo {
@@ -57,30 +62,95 @@ body {
   }
   li a {
     display: block;
-    color: #1d1d1b;
+    color: $text-color2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
   .main {
+    transition: margin-left .5s;
     height: 100vh;
-    background-image: url(../Img/mlarge-plastique-ocean.jpg);
+    background-image: url(../Img/artem-beliaikin-belart84-unsplash1.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
 
     .layer{
         display: flex;
         flex-direction: column;
         margin: none;
         align-items: center;
-        background-color: $primary-color;
-        opacity: 72%;
+        background-color: hsla(202, 79, 64, 0.23);
         position: 100wh;
-        top: 0;
-        left: 0;
         width: 100%;
         height: 100%;
       }
+
+      .container-top {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        .topbox-text {
+            &.item1 {
+                margin: 15% 0 0 0;
+            }
+            &.item2 {
+                margin: 25% 0 0 0;
+            }
+            text-transform: uppercase;
+            h1 {
+              position: relative;
+              justify-content: center;
+              text-align: center;
+              color:$text-color1;
+                font-size: 30px;
+                line-height: 50px;  
+            }
+
+            h2 {
+                font-size: 35px;
+                line-height: 25px;
+            }
+
+            h1, h2 {
+                font-weight: bold;
+                margin: 0;
+            }
+            p {
+                font-weight: 300;
+                margin: 0;
+                font-size: 32px;
+            }
+        //    text-align: center;
+        }
+        .button-main {
+     //     background-color: #4CAF50;
+          border: none;
+          padding: 10px 26px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 50px 2px;
+          transition-duration: 0.4s;
+          cursor: pointer;
+          color: black; 
+          border: 2px solid #4CAF50;
+       //   opacity: 2;
+        }
+        .button1 {
+       //  background-color: $primary-color;
+          color: $text-color1; 
+          border: 2px solid $primary-color;
+        }
+        
+        .button1:hover {
+          background-color: $primary-color;
+          color: white;
+        }
+    }
+
       .text1 {
         flex-grow: 1;
       }
