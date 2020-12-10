@@ -29,7 +29,6 @@ $text-color2: #1D1D1B;
   }
 
 ul {
-  display: flex;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -77,7 +76,6 @@ body {
  background-size: cover;
  background-repeat: no-repeat;
  .layer{
-        display: flex;
         flex-direction: column;
         margin: none;
         align-items: center;
