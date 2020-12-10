@@ -22,7 +22,6 @@ ul {
   margin: 0;
   padding-left: 10px;
   overflow: hidden;
-  background-color: #2375A4;
   height: 50px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -36,7 +35,7 @@ ul .message {
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
-  color: #f3f3f3;
+  color: #1D1D1B;
 }
 
 ul .fa-facebook-square:before {
