@@ -73,6 +73,8 @@ body {
 .cover-container {
  // max-width: 42em;
  background-image: url(../img/shutterstock1-1729211449.jpg);
+ background-size: cover;
+ background-repeat: no-repeat;
  
  .layer{
         display: flex;
