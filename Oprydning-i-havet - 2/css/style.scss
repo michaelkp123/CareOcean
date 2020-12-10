@@ -73,6 +73,7 @@ body {
 .cover-container {
  // max-width: 42em;
  background-image: url(../img/shutterstock1-1729211449.jpg);
+ 
  .layer{
         display: flex;
         flex-direction: column;
@@ -104,8 +105,8 @@ body {
 }
 
 .nav-masthead .active {
-  color: $text-color2;
-  border-bottom-color:$primary-color;
+  color: $text-color1;
+  border-bottom-color:$text-color1;
 }
 
 .button-main {
