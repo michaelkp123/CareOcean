@@ -71,8 +71,10 @@ body {
     transition: margin-left .5s;
     height: 100vh;
     background-image: url(../Img/artem-beliaikin-belart84-unsplash1.jpg);
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-attachment: fixed;
+    background-size: cover;
 
     .layer{
         display: flex;
