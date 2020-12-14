@@ -12,12 +12,15 @@
 <body>
 
     <div class="layer">
-        <div class="navbar">
-            <img class="logo" src="Img/Logo.svg" alt="Logo">
-            <li class="Menu1"><a href="havet.html">Menu 1</a></li>
-            <li class="Menu2"><a href="Menu">Menu 1</a></li>
-            <li class="Menu3"><a href="Menu">Menu 1</a></li>
-        </div>
+        <div class="navbar" id="nav">
+            <a href="index.html"><img class="logo" src="Img/Logo.svg" alt="Logo"></a>
+            <a href="havet.html" class="active menu1" >MENU</a>
+            <a href="#MENU" class="menu1" >MENU</a>
+            <a href="#MENU" class="menu1" >MENU</a>
+            <a href="javascript:void(0);" class="icon" onclick="navfunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
 
         <div class="background">
             <div class="container">
@@ -70,7 +73,7 @@
                 <i class="fab fa-instagram-square"></i>
             </ul>
         </footer>
-
+        <script type="text/javascript" src="js/nav.js"></script>
 </body>
 
 </html>

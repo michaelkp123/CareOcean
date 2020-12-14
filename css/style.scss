@@ -50,28 +50,36 @@ ul {
 }
 
 .navbar {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
-    // background-color:$text-color1;
-    height: 50px;
+    display: flex;
+    flex-direction: row;
+    a {
+        color: $text-color2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    .menu1 {
+        flex-grow: 4; 
+        justify-content: center;
+        align-self: center;
+    }
     .logo {
         flex-grow: 1;
         width: 155px;
         height: 50px;
         margin-top: 4px;
+    } 
+    a:hover {
+        background-color:#2375a45d;
     }
-    .Menu1 {
-        flex-grow: 4;
+    a.active {
+        border-bottom: 2px solid $primary-color;
     }
-    .Menu2 {
-        flex-grow: 4;
+    .icon {
+        display: none;
     }
-    .Menu3 {
-        flex-grow: 4;
-    }
+  
 }
 
 li a {
@@ -117,6 +125,9 @@ li a {
                 margin: 0;
             }
             p {
+                position: relative;
+                justify-content: center;
+                text-align: center;
                 font-weight: 300;
                 margin: 0;
                 font-size: 32px;
@@ -257,5 +268,29 @@ li a {
     .container .card {
         flex-direction: column;
         max-width: 350px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+      display: flex;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .navbar.responsive {position: relative; flex-direction: column; background-color: $primary-color;}
+    .navbar.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
     }
 }

@@ -58,14 +58,33 @@ ul .fa-instagram-square:before {
 }
 
 .navbar {
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  height: 50px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.navbar a {
+  color: #1D1D1B;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar .menu1 {
+  -webkit-box-flex: 4;
+      -ms-flex-positive: 4;
+          flex-grow: 4;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .navbar .logo {
@@ -77,22 +96,16 @@ ul .fa-instagram-square:before {
   margin-top: 4px;
 }
 
-.navbar .Menu1 {
-  -webkit-box-flex: 4;
-      -ms-flex-positive: 4;
-          flex-grow: 4;
+.navbar a:hover {
+  background-color: #2375a45d;
 }
 
-.navbar .Menu2 {
-  -webkit-box-flex: 4;
-      -ms-flex-positive: 4;
-          flex-grow: 4;
+.navbar a.active {
+  border-bottom: 2px solid #2375A4;
 }
 
-.navbar .Menu3 {
-  -webkit-box-flex: 4;
-      -ms-flex-positive: 4;
-          flex-grow: 4;
+.navbar .icon {
+  display: none;
 }
 
 li a {
@@ -161,6 +174,11 @@ li a {
 }
 
 .main .container-top .topbox-text p {
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
   font-weight: 300;
   margin: 0;
   font-size: 32px;
@@ -358,6 +376,41 @@ li a {
         -ms-flex-direction: column;
             flex-direction: column;
     max-width: 350px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {
+    display: none;
+  }
+  .navbar a.icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive {
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #2375A4;
+  }
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
   }
 }
 /*# sourceMappingURL=style.css.map */
