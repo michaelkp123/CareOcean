@@ -1,5 +1,6 @@
-body {
+* {
   margin: 0;
+  padding: 0;
 }
 
 .main-pagebg {
@@ -153,7 +154,8 @@ li a {
   line-height: 25px;
 }
 
-.main .container-top .topbox-text h1, .main .container-top .topbox-text h2 {
+.main .container-top .topbox-text h1,
+.main .container-top .topbox-text h2 {
   font-weight: bold;
   margin: 0;
 }
@@ -260,5 +262,102 @@ li a {
   height: 400px;
   background-image: url(../Img/artem-beliaikin-belart84-unsplash1.jpg);
   background-size: cover;
+}
+
+.background {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background: #112128;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .card {
+  position: relative;
+  max-width: 800px;
+  background: #fff;
+  margin: 10px;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .card .imgBx {
+  max-width: 1980px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 150px;
+          flex: 0 0 150px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .card .imgBx img {
+  max-width: 100%;
+}
+
+.container .card .content {
+  margin-left: 20px;
+}
+
+@media (max-width: 991px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 350px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
