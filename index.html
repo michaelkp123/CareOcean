@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 </head>
 <body>
   <div class="main-pagebg">
+    <!-- https://www.w3schools.com/howto/howto_js_topnav.asp -->
     <div class="layer">
       <div class="navbar" id="nav">
         <a href="index.html"><img class="logo" src="Img/Logo.svg" alt="Logo"></a>
@@ -21,8 +23,8 @@
           <i class="fa fa-bars"></i>
         </a>
       </div>
-    
-      <div class="main">
+     
+      <div id="videobg" class="main">
        
           <div class="container-top">
           <div class="topbox-text item1">
@@ -41,8 +43,85 @@
         </ul>
         </footer>
       </div>
+      <div id="background">
+        <a class="player" id="myPlayerID"></a>
     </div>
-    
+    </div>
+    <script src="js/jquery.mb.YTPlayer.js"></script>
+<script>
+  /* https://github.com/pupunzi/jquery.mb.YTPlayer/wiki 
+  https://github.com/pupunzi/jquery.mb.YTPlayer/blob/master/examples/demo_videoList_autoChange.html */
+    jQuery(function() {
+        var videos = [{
+            videoURL: "HQTUWK7CM-Y",
+            autoPlay: true,
+            mute: true,
+            loop: false,
+            startAt: 0,
+            stopAt: 24,
+            useOnMobile: true,
+            gaTrack: false,
+            showControls: false,
+            optimizeDisplay: true,
+            realfullscreen: true,
+            containment:'#videobg'
+        }, {
+            videoURL: "HQTUWK7CM-Y",
+            autoPlay: true,
+            mute: true,
+            loop: false,
+            startAt: 33,
+            stopAt: 47,
+            useOnMobile: true,
+            gaTrack: false,
+            showControls: false,
+            optimizeDisplay: true,
+            realfullscreen: true,
+            containment:'#videobg'
+        }, {
+            videoURL: "Yomf5pBN8dY",
+            autoPlay: true,
+            mute: true,
+            loop: false,
+            startAt: 84,
+            stopAt: 106,
+            useOnMobile: true,
+            gaTrack: false,
+            showControls: false,
+            optimizeDisplay: true,
+            realfullscreen: true,
+            containment:'#videobg'
+        }, {
+            videoURL: "6zrn4-FfbXw",
+            autoPlay: true,
+            mute: true,
+            loop: false,
+            startAt: 52,
+            stopAt: 64,
+            useOnMobile: true,
+            gaTrack: false,
+            showControls: false,
+            optimizeDisplay: true,
+            realfullscreen: true,
+            containment:'#videobg'
+        }, ];
+
+        var rndVideo = videos[Math.floor(Math.random() * videos.length)];
+
+        var myPlayListPlayer = jQuery("#myPlayerID").YTPlaylist(videos, true, function(video) {
+            if (video.videoData) {
+                jQuery("#videoID").html(video.videoData.id);
+                jQuery("#videoTitle").html(video.videoData.title);
+            }
+        });
+
+        myPlayListPlayer.on("YTPData", function(e) {
+            jQuery("#videoID").html(e.prop.id);
+            jQuery("#videoTitle").html(e.prop.title);
+        });
+    });
+</script>
+
     <script type="text/javascript" src="js/nav.js"></script>
 </body>
 </html>
