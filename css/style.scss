@@ -1,6 +1,10 @@
 $primary-color: #2375A4;
 $text-color1: #f3f3f3;
 $text-color2: #1D1D1B;
+
+@font-face {  font-family: "Helvetica";
+    src: url('webfonts/Helvetica.tff'); } 
+
 * {
     margin: 0;
     padding: 0;
@@ -54,6 +58,8 @@ ul {
     display: flex;
     flex-direction: row;
     a {
+        font-family: Helvetica, sans-serif;
+        font-weight: bold;
         color: $text-color2;
         text-align: center;
         padding: 14px 16px;
@@ -108,6 +114,7 @@ li a {
             }
             text-transform: uppercase;
             h1 {
+                font-family: 'Titillium Web', sans-serif;
                 position: relative;
                 justify-content: center;
                 text-align: center;
@@ -125,6 +132,8 @@ li a {
                 margin: 0;
             }
             p {
+                font-family: Helvetica, sans-serif;
+                font-weight: bold;
                 position: relative;
                 justify-content: center;
                 text-align: center;
@@ -136,6 +145,7 @@ li a {
         }
         .button-main {
             //     background-color: #4CAF50;
+            font-family: 'Titillium Web', sans-serif;
             border: none;
             padding: 10px 26px;
             text-align: center;
@@ -253,6 +263,12 @@ li a {
 
 .container .card .content {
     margin-left: 20px;
+    h2 {
+        font-family: 'Titillium Web', sans-serif;
+    }
+    p {
+        font-family: Helvetica, 'sans-serif';
+    }
 }
 
 @media (max-width: 991px) {
