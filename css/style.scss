@@ -358,3 +358,37 @@ input[type=text], select, textarea {
         margin-top: 0;
       }
 }
+.Kontakt-container {
+    display: flex;
+    background-color: $text-color1;
+    min-height: 100vh;
+    min-width: 1980px;
+    align-items: center;
+}
+.left-container{
+    background-color: $text-color1;
+    min-width: 1000px;
+    min-height: 100vh;
+    max-width: 1000px;
+    max-height: 100vh;
+    position: relative;
+}
+.right-container{
+    background-color: $text-color2;
+    min-width: 600px;
+    min-height: 500px;
+    max-width: 600px;
+    max-height: 500px;
+    position: relative;
+    top: 50px;
+    right: 310px;
+
+}
+.bluebox {
+  background-color: $primary-color;
+  min-height: 100vh;
+  min-width: 350px;
+  max-width: 350px;
+  position: relative;
+  left: 290px;
+}
