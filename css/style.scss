@@ -239,9 +239,8 @@ li a {
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
-}
-
-.container .card {
+    
+.card {
     position: relative;
     max-width: 800px;
     background: #fff;
@@ -250,20 +249,19 @@ li a {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.container .card .imgBx {
+    
+.imgBx {
     max-width: 1980px;
     flex: 0 0 250px;
     justify-content: center;
     align-items: center;
 }
 
-.container .card .imgBx img {
+.imgBx img {
     max-width: 100%;
 }
 
-.container .card .content {
+.content {
     margin-left: 20px;
     h2 {
         font-family: 'Titillium Web', sans-serif;
@@ -272,7 +270,8 @@ li a {
         font-family: Helvetica, 'sans-serif';
     }
 }
-
+}
+}
 
 input[type=text], select, textarea {
     width: 100%;
@@ -301,6 +300,7 @@ input[type=text], select, textarea {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 10px;
+    margin-top: 10px;
     flex-direction: column;
 
   }
@@ -356,7 +356,10 @@ input[type=text], select, textarea {
     .column, input[type=submit] {
         width: 100%;
         margin-top: 0;
-      }
+    }
+    .container .card .imgBx {
+        flex: 0 0 0;
+    }
 }
 .Kontakt-container {
     display: flex;
