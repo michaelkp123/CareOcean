@@ -74,6 +74,7 @@ ul .fa-instagram-square:before {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  background-color: #f3f3f3;
 }
 
 .navbar a {
@@ -553,7 +554,7 @@ input[type=submit]:hover {
   }
 }
 
-h2 {
-  font-family: "Titillium Web";
+footer {
+  background-color: #f3f3f3;
 }
 /*# sourceMappingURL=style.css.map */
