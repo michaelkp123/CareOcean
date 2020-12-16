@@ -74,7 +74,6 @@ ul .fa-instagram-square:before {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background-color: #f3f3f3;
 }
 
 .navbar a {
@@ -210,6 +209,8 @@ li a {
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
   cursor: pointer;
+  color: black;
+  border: 2px solid #4CAF50;
 }
 
 .main .container-top .button1 {
@@ -219,7 +220,7 @@ li a {
 
 .main .container-top .button1:hover {
   background-color: #2375A4;
-  color: #f3f3f3;
+  color: white;
 }
 
 .main .text1 {
@@ -240,7 +241,12 @@ li a {
           flex-grow: 1;
 }
 
+.havet-main {
+  border: 2px solid black;
+}
+
 .havet-main .center-container {
+  border: 2px solid blue;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -301,7 +307,7 @@ li a {
       -ms-flex-align: center;
           align-items: center;
   min-height: 100vh;
-  background: #1D1D1B;
+  background: #112128;
 }
 
 .container {
@@ -322,12 +328,16 @@ li a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  /* The grid: Four equal columns that floats next to each other */
+  /* Style the images inside the grid */
+  /* Clear floats after the columns */
+  /* Closable button inside the expanded image */
 }
 
 .container .card {
   position: relative;
   max-width: 800px;
-  background: #f3f3f3;
+  background: #fff;
   margin: 10px;
   padding: 15px;
   display: -webkit-box;
@@ -370,12 +380,60 @@ li a {
   font-family: Helvetica, 'sans-serif';
 }
 
+.container .row-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.container .column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+.container .column img {
+  opacity: 0.8;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.container .column img:hover {
+  opacity: 1;
+}
+
+.container .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
 input[type=text],
 select,
 textarea {
   width: 100%;
   padding-bottom: 20px;
-  border: 1px solid #f3f3f3;
+  border: 1px solid #ccc;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
@@ -384,7 +442,7 @@ textarea {
 input[type=submit] {
   width: 100%;
   background-color: #4CAF50;
-  color: #f3f3f3;
+  color: white;
   padding: 12px 20px;
   border: none;
   cursor: pointer;
@@ -399,7 +457,7 @@ input[type=submit]:hover {
   display: -ms-flexbox;
   display: flex;
   border-radius: 5px;
-  background-color: #f3f3f3;
+  background-color: #f2f2f2;
   padding: 10px;
   margin-top: 10px;
   -webkit-box-orient: vertical;
@@ -411,7 +469,7 @@ input[type=submit]:hover {
 .info {
   position: relative;
   max-width: 800px;
-  background: #f3f3f3;
+  background: #fff;
   margin: 10px;
   padding: 15px;
   display: -webkit-box;
@@ -497,9 +555,5 @@ input[type=submit]:hover {
 
 h2 {
   font-family: "Titillium Web";
-}
-
-footer {
-  background-color: #f3f3f3;
 }
 /*# sourceMappingURL=style.css.map */
