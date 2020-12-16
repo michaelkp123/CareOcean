@@ -1,17 +1,19 @@
                         $primary-color: #2375A4;
-                    $text-color1: #f3f3f3;
-                    $text-color2: #1D1D1B;
-                    $header-text:'Titillium Web';
-                    $body-text:'Helvetica';
-                    @font-face {
-                        font-family: "Helvetica";
-                        src: url('webfonts/Helvetica.ttf');
-                        font-family: 'Titillium Web', sans-serif;
-                    }
+                        $text-color1: #f3f3f3;
+                        $text-color2: #1D1D1B;
+                        $header-text:'Titillium Web';
+                        $body-text:'Helvetica';
+                        @font-face {
+                            font-family: "Helvetica";
+                            src: url('webfonts/Helvetica.ttf');
+                            font-family: 'Titillium Web', sans-serif;
+                        }
+                        
                         * {
                             margin: 0;
                             padding: 0;
                         }
+                        
                         .main-pagebg {
                             background-image: url(../Img/artem-beliaikin-belart84-unsplash1.jpg);
                             background-position: center center;
@@ -26,6 +28,7 @@
                             }
                             // overflow-y: hidden;
                         }
+                        
                         ul {
                             display: flex;
                             list-style-type: none;
@@ -55,10 +58,12 @@
                                 font-size: 30px;
                             }
                         }
+                        
                         .navbar {
                             overflow: hidden;
                             display: flex;
                             flex-direction: row;
+                            background-color: $text-color1;
                             a {
                                 font-family: Helvetica, sans-serif;
                                 font-weight: bold;
@@ -88,6 +93,7 @@
                                 display: none;
                             }
                         }
+                        
                         li a {
                             display: block;
                             color: $text-color2;
@@ -95,6 +101,7 @@
                             padding: 14px 16px;
                             text-decoration: none;
                         }
+                        
                         .main {
                             transition: margin-left .5s;
                             height: 100vh;
@@ -140,10 +147,8 @@
                                         margin: 0;
                                         font-size: 32px;
                                     }
-                                    //    text-align: center;
                                 }
                                 .button-main {
-                                    //     background-color: #4CAF50;
                                     font-family: 'Titillium Web', sans-serif;
                                     border: none;
                                     padding: 10px 26px;
@@ -154,18 +159,14 @@
                                     margin: 50px 2px;
                                     transition-duration: 0.4s;
                                     cursor: pointer;
-                                    color: black;
-                                    border: 2px solid #4CAF50;
-                                    //   opacity: 2;
                                 }
                                 .button1 {
-                                    //  background-color: $primary-color;
                                     color: $text-color1;
                                     border: 2px solid $primary-color;
                                 }
                                 .button1:hover {
                                     background-color: $primary-color;
-                                    color: white;
+                                    color: $text-color1;
                                 }
                             }
                             .text1 {
@@ -178,10 +179,9 @@
                                 flex-grow: 1;
                             }
                         }
+                        
                         .havet-main {
-                            border: 2px solid black;
                             .center-container {
-                                border: 2px solid blue;
                                 justify-content: center;
                                 display: flex;
                                 flex-wrap: wrap;
@@ -190,18 +190,13 @@
                                     width: 80%;
                                     display: flex;
                                     flex-wrap: wrap;
-                                    ///justify-content: space-between;
                                     .text-arealeft {
                                         margin: 50px;
                                         h4 {
-                                            //  margin: 0;
-                                            // padding: 10px 0 0 15px;
                                             text-transform: uppercase;
                                             font-weight: 300;
                                         }
                                         p {
-                                            //  margin: 0;
-                                            // padding: 10px 0 0 15px;
                                             text-transform: uppercase;
                                             font-weight: 300;
                                         }
@@ -218,13 +213,15 @@
                                 }
                             }
                         }
+                        
                         .background {
                             display: flex;
                             justify-content: center;
                             align-items: center;
                             min-height: 100vh;
-                            background: #112128;
+                            background: $text-color2;
                         }
+                        
                         .container {
                             position: relative;
                             width: 100vw;
@@ -236,7 +233,7 @@
                             .card {
                                 position: relative;
                                 max-width: 800px;
-                                background: #fff;
+                                background: $text-color1;
                                 margin: 10px;
                                 padding: 15px;
                                 display: flex;
@@ -262,50 +259,57 @@
                                 }
                             }
                         }
+                        
                         input[type=text],
                         select,
                         textarea {
                             width: 100%;
                             padding-bottom: 20px;
-                            border: 1px solid #ccc;
+                            border: 1px solid $text-color1;
                             margin-top: 6px;
                             margin-bottom: 16px;
                             resize: vertical;
                         }
+                        
                         input[type=submit] {
                             width: 100%;
                             background-color: #4CAF50;
-                            color: white;
+                            color: $text-color1;
                             padding: 12px 20px;
                             border: none;
                             cursor: pointer;
                         }
+                        
                         input[type=submit]:hover {
                             background-color: #45a049;
                         }
+                        
                         .contact-container {
                             display: flex;
                             border-radius: 5px;
-                            background-color: #f2f2f2;
+                            background-color: $text-color1;
                             padding: 10px;
                             margin-top: 10px;
                             flex-direction: column;
                         }
+                        
                         .info {
                             position: relative;
                             max-width: 800px;
-                            background: #fff;
+                            background: $text-color1;
                             margin: 10px;
                             padding: 15px;
                             display: flex;
                             align-items: center;
                             justify-content: center;
                         }
+                        
                         @media (max-width: 991px) {
                             .container {
                                 flex-direction: column;
                             }
                         }
+                        
                         @media (max-width: 768px) {
                             .container {
                                 flex-direction: column;
@@ -315,6 +319,7 @@
                                 max-width: 350px;
                             }
                         }
+                        
                         @media screen and (max-width: 600px) {
                             .navbar a:not(:first-child) {
                                 display: none;
@@ -326,6 +331,7 @@
                                 top: 0;
                             }
                         }
+                        
                         @media screen and (max-width: 600px) {
                             .navbar.responsive {
                                 position: relative;
@@ -351,7 +357,11 @@
                                 flex: 0 0 0;
                             }
                         }
+                        
                         h2 {
                             font-family: $header-text;
                         }
                         
+                        footer {
+                            background-color: $text-color1;
+                        }

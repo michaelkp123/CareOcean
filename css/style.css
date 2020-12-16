@@ -74,6 +74,7 @@ ul .fa-instagram-square:before {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  background-color: #f3f3f3;
 }
 
 .navbar a {
@@ -209,8 +210,6 @@ li a {
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
   cursor: pointer;
-  color: black;
-  border: 2px solid #4CAF50;
 }
 
 .main .container-top .button1 {
@@ -220,7 +219,7 @@ li a {
 
 .main .container-top .button1:hover {
   background-color: #2375A4;
-  color: white;
+  color: #f3f3f3;
 }
 
 .main .text1 {
@@ -241,12 +240,7 @@ li a {
           flex-grow: 1;
 }
 
-.havet-main {
-  border: 2px solid black;
-}
-
 .havet-main .center-container {
-  border: 2px solid blue;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -307,7 +301,7 @@ li a {
       -ms-flex-align: center;
           align-items: center;
   min-height: 100vh;
-  background: #112128;
+  background: #1D1D1B;
 }
 
 .container {
@@ -333,7 +327,7 @@ li a {
 .container .card {
   position: relative;
   max-width: 800px;
-  background: #fff;
+  background: #f3f3f3;
   margin: 10px;
   padding: 15px;
   display: -webkit-box;
@@ -381,7 +375,7 @@ select,
 textarea {
   width: 100%;
   padding-bottom: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #f3f3f3;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
@@ -390,7 +384,7 @@ textarea {
 input[type=submit] {
   width: 100%;
   background-color: #4CAF50;
-  color: white;
+  color: #f3f3f3;
   padding: 12px 20px;
   border: none;
   cursor: pointer;
@@ -405,7 +399,7 @@ input[type=submit]:hover {
   display: -ms-flexbox;
   display: flex;
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #f3f3f3;
   padding: 10px;
   margin-top: 10px;
   -webkit-box-orient: vertical;
@@ -417,7 +411,7 @@ input[type=submit]:hover {
 .info {
   position: relative;
   max-width: 800px;
-  background: #fff;
+  background: #f3f3f3;
   margin: 10px;
   padding: 15px;
   display: -webkit-box;
@@ -503,5 +497,9 @@ input[type=submit]:hover {
 
 h2 {
   font-family: "Titillium Web";
+}
+
+footer {
+  background-color: #f3f3f3;
 }
 /*# sourceMappingURL=style.css.map */
