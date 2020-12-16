@@ -9,4 +9,5 @@ function navfunction() {
 function myFunction(imgs) {
   var expandImg = document.getElementById("expandedImg");
   expandImg.src = imgs.src;
+  document.getElementById('expandedImg').scrollIntoView();
 }
