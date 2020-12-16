@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Helvetica";
-  src: url("webfonts/Helvetica.tff");
+  src: url("webfonts/Helvetica.ttf");
+  font-family: 'Titillium Web', sans-serif;
 }
 
 * {
@@ -375,7 +376,9 @@ li a {
   font-family: Helvetica, 'sans-serif';
 }
 
-input[type=text], select, textarea {
+input[type=text],
+select,
+textarea {
   width: 100%;
   padding-bottom: 20px;
   border: 1px solid #ccc;
@@ -404,6 +407,7 @@ input[type=submit]:hover {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 10px;
+  margin-top: 10px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -485,50 +489,19 @@ input[type=submit]:hover {
     display: block;
     text-align: left;
   }
-  .column, input[type=submit] {
+  .column,
+  input[type=submit] {
     width: 100%;
     margin-top: 0;
   }
+  .container .card .imgBx {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 0px;
+            flex: 0 0 0;
+  }
 }
 
-.Kontakt-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #f3f3f3;
-  min-height: 100vh;
-  min-width: 1980px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.left-container {
-  background-color: #f3f3f3;
-  min-width: 1000px;
-  min-height: 100vh;
-  max-width: 1000px;
-  max-height: 100vh;
-  position: relative;
-}
-
-.right-container {
-  background-color: #1D1D1B;
-  min-width: 600px;
-  min-height: 500px;
-  max-width: 600px;
-  max-height: 500px;
-  position: relative;
-  top: 50px;
-  right: 310px;
-}
-
-.bluebox {
-  background-color: #2375A4;
-  min-height: 100vh;
-  min-width: 350px;
-  max-width: 350px;
-  position: relative;
-  left: 290px;
+h2 {
+  font-family: "Titillium Web";
 }
 /*# sourceMappingURL=style.css.map */
